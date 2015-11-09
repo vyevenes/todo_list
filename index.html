@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>ToDo list</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div>
-    <label> Add ToDo item
-      <input id="input" type="text" placeholder="new ToDo item">
-      <button id="button" type="submit">Add</button>
-    </label>
+    <section class="wrapper">
+      <section class="header">
+        <h1>To Do List <small>By Vanessa Yévenes</small></h1>
+        <div>
+          <label>Add ToDo item</label>
+          <input id="input" type="text" placeholder="New To Do item">
+          <button id="button" type="submit">Add</button>
+        </div>
+      </section>
 
-    <ul id="list">
-    </ul>
-  </div>
+        <div class="added-list">
+          <ul id="list"></ul>
+        </div>
+    </section>
   <script src="app.js"></script>
 </body>
 </html>

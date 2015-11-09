@@ -1,0 +1,130 @@
+* {
+  font-family: 'helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper  {
+  border: 1px solid #ccc;
+  border-bottom: 10px solid #7D7373;
+  border-radius: 0 0 10px 10px;
+  margin: auto;
+  min-height: 600px;
+  overflow: hidden;
+  width: 400px;
+}
+
+.header {
+  background-color: #7D7373;
+  border-top: 5px solid #5E4E4E;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.header div,
+h1 {
+  float: left;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 small {
+  font-size: 14px;
+  clear: both;
+  display: block;
+  margin-top: -14px;
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+label {
+  color: #5E4E4E;
+  font-size: 14px;
+  font-style: italic;
+  float: left;
+}
+
+input[type="text"] ,
+button[type="submit"] {
+  border: none;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 38px;
+  margin-top: 5px;
+}
+
+input[type="text"] {
+  border-radius: 5px 0 0 5px;
+  clear: both;
+  padding: 0 10px;
+  width: 75%;
+}
+
+button[type="submit"] {
+  background: #5E4E4E;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 18px;
+  width: 19%;
+  transition: all 0.3s ease 0s;
+}
+
+button[type="submit"]:hover {
+  background-color: #593F3F;
+}
+
+.added-list {
+  clear: both;
+  padding: 20px 10px;
+}
+
+li {
+  border-bottom: 1px dotted #ccc;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  list-style-type: none;
+  padding: 10px;
+  text-transform: capitalize;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+li:before {
+  color: #86C463;
+  content: '\2713';
+  margin-right: 10px;
+}
+
+span {
+  background-color: #E27070;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 1px 10px;
+  margin-top: 8px;
+  float: right;
+}
+
+span:before {
+  color: #fff;
+  content: '✖';
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    width: 100%;
+  }
+}
