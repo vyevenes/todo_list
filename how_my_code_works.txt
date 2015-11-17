@@ -4,8 +4,11 @@
 
 ** If you based your code on examples from the web, then please provide URLs for the source(s)
 For:
-  > Clear input value: http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
-  > Remove items: http://stackoverflow.com/questions/3387427/remove-element-by-id
+
+  > Define `clearInput` function. http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
+
+  >  Define `bindClickToRemoveButton` function. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+
   > For to find js methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index
 
 ----------------------------------------------------------------------
@@ -19,7 +22,7 @@ For:
 
 **If you had problems completing the project – record the issues that you had.
 
-In the extra credit:
+I had problems triying to figure put how should be continue with the following "extra credit" issues:
   > When remove the item, putting a strikethrough line through the item or graying it out.
   > Ability to save todo items through local storage.
 

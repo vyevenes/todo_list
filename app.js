@@ -1,3 +1,4 @@
+// Define `addItem` function.
 var addItem = function() {
   var input = document.getElementById("input");
   var value = input.value;
@@ -6,8 +7,9 @@ var addItem = function() {
     alert('Please write a item');
     return;
   }
-  // The function createElement get two arguments (element and text) >> la funcion createElement recibe 2 argumentos (elemento, texto)
-  // The element and text are a string  >> el elemento es un string y texto es un string
+
+  // The function `createElement` get two arguments (element and text).
+  // Element and text are strings.
   function createElement(element, text) {
     element = document.createElement(element);
     text = document.createTextNode(text);
@@ -15,39 +17,43 @@ var addItem = function() {
     return element;
   }
 
-  // create element
+  // Create an li element to be appended on the ul container.
   var li = createElement('li', value);
+
+  // Create an span element to use as a `removeButton`.
   var removeButton = createElement('span', 'Remove');
 
-  // Get the element with the id list >> obtiene el elemento con el id list
+  // Get the element with the id #list.
   var ul = document.getElementById('list');
 
-  // Add >> agrega el remove button al elemento li que vamos a agregar a la lista
+  // Append the `removeButton` to li element.
   li.appendChild(removeButton);
 
-  // bindea el elemento al btn remover //url: http://www.w3schools.com/jquery/event_bind.asp
+  // Bind click event to remove button.
   bindClickToRemoveButton(li);
 
-  // Al elemento ul le inserta un li
+  // Append li element to the ul container.
   ul.appendChild(li);
 
-  // reset the input cada vez que inserta un li
+  // Clear the input field.
   clearInput();
 };
 
-// url http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
+// Define `clearInput` function. http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
 var clearInput = function() {
   document.getElementById("input").value = '';
 }
-
+// Define `removeItem` function.
 var removeItem = function(event) {
  var currentTarget = event.currentTarget;
  currentTarget.parentNode.remove();
 }
 
+// Define `button` variable
 var button = document.getElementById("button");
 button.onclick = addItem;
 
+// Define `bindClickToRemoveButton` function. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
 var bindClickToRemoveButton = function(li) {
   var removeButton = li.querySelector("span");
   removeButton.onclick = removeItem;

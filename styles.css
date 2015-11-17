@@ -6,7 +6,7 @@
 
 .wrapper  {
   border: 1px solid #ccc;
-  border-bottom: 10px solid #7D7373;
+  border-bottom: 10px solid #668949;
   border-radius: 0 0 10px 10px;
   margin: auto;
   min-height: 600px;
@@ -15,8 +15,8 @@
 }
 
 .header {
-  background-color: #7D7373;
-  border-top: 5px solid #5E4E4E;
+  background-color: #96AF53;
+  border-top: 5px solid #668949;
   color: #fff;
   padding: 20px;
   overflow: hidden;
@@ -45,7 +45,7 @@ h1 small {
 }
 
 label {
-  color: #5E4E4E;
+  color: #FFFFFF;
   font-size: 14px;
   font-style: italic;
   float: left;
@@ -69,7 +69,7 @@ input[type="text"] {
 }
 
 button[type="submit"] {
-  background: #5E4E4E;
+  background: #668949;
   cursor: pointer;
   border-radius: 0 5px 5px 0;
   color: #fff;
@@ -79,7 +79,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #593F3F;
+  background-color: #4B5F2A;
 }
 
 .added-list {
