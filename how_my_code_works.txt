@@ -7,15 +7,15 @@ For:
 
   > Define `clearInput` function. http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
 
-  >  Define `bindClickToRemoveButton` function. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+  >  Define `bindClickToRemoveButton` function. https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 
-  > For to find js methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index
+  > JS methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
 ** What challenges did you encounter?
-  > Try to refactoring my code in the app.js L11
+  > The challanged was figure out how to create elements on the javascript side.
 
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------

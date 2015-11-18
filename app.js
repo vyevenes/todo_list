@@ -39,7 +39,7 @@ var addItem = function() {
   clearInput();
 };
 
-// Define `clearInput` function. http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
+// Define `clearInput` function. Source http://stackoverflow.com/questions/6750445/javascript-to-clear-form-field-on-button-click
 var clearInput = function() {
   document.getElementById("input").value = '';
 }
@@ -53,7 +53,7 @@ var removeItem = function(event) {
 var button = document.getElementById("button");
 button.onclick = addItem;
 
-// Define `bindClickToRemoveButton` function. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+// Define `bindClickToRemoveButton` function. Source https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
 var bindClickToRemoveButton = function(li) {
   var removeButton = li.querySelector("span");
   removeButton.onclick = removeItem;
